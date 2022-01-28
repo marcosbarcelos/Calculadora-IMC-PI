@@ -14,19 +14,25 @@
         <h2>Imc</h2>
         <form action="">
             <div class="container-form-input">
-                <input type="number" name="altura" id="altura" 
-                placeholder="Digite Sua Altura (metros)">
+                <input type="number" name="altura" id="altura" placeholder="Digite Sua Altura (metros)">
                 <div class="input-underline"></div>
             </div>
             <div class="container-form-input">
-                <input type="number" name="peso" id="peso" 
-                placeholder="Digite Seu Peso (kg)">
+                <input type="number" name="peso" id="peso" placeholder="Digite Seu Peso (kg)">
                 <div class="input-underline"></div>
             </div>
-        
+            <div class="container-form-input select">
+                <select id="sexo">
+                    <option value="v" selected>Selecione seu sexo</option>
+                    <option value="f">Feminino</option>
+                    <option value="m">Masculino</option>
+                </select>
+                <div class="input-underline"></div>
+            </div>
+
             <input type="button" value="calcular" id="calcular">
+            <p>Desenvolvido por - Marcos Barcelos</p>
         </form>
-        <p>Desenvolvido por - Marcos Barcelos</p>
     </main>
 
     <div class="container-result" id="container_resultado">
@@ -41,4 +47,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
