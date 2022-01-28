@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Marcos Barcelos">
+    <meta name="description" content="Calculadora de IMC - Índice de massa corporal.">
+    <title>Calcular IMC</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <main class="container" id="container">
+        <h2>Imc</h2>
+        <form action="">
+            <div class="container-form-input">
+                <input type="number" name="altura" id="altura" 
+                placeholder="Digite Sua Altura (metros)">
+                <div class="input-underline"></div>
+            </div>
+            <div class="container-form-input">
+                <input type="number" name="peso" id="peso" 
+                placeholder="Digite Seu Peso (kg)">
+                <div class="input-underline"></div>
+            </div>
+        
+            <input type="button" value="calcular" id="calcular">
+        </form>
+        <p>Desenvolvido por - Marcos Barcelos</p>
+    </main>
+
+    <div class="container-result" id="container_resultado">
+        <h2>Resultado</h2>
+        <p id="resultado"></p>
+        <img src="assets/undraw.svg" alt="pessoa com calculadora">
+        <a href="index.html">
+            <input type="submit" value="calcular novamente" id="calcular-novamente">
+        </a>
+        <p>Desenvolvido por - Marcos Barcelos</p>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
