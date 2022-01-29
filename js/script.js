@@ -7,7 +7,7 @@ function imc() {
   const select = document.getElementById("sexo");
   const selectvalue = select.options[select.selectedIndex].value;
 
-  if (altura !== "" && peso !== "" && selectvalue !== "v") {
+  if (altura !== "" && peso !== "" && selectvalue !== "") {
     document.getElementById("container").style.display = "none";
     document.getElementById("container_resultado").style.display = "flex";
 
@@ -18,7 +18,7 @@ function imc() {
     if (valorIMC < 18.5) {
       classificacaoIMC = "peso abaixo do normal";
     }else if (valorIMC < 25) {
-      classificacaoIMC = "peso ideal, Parabéns!!";
+      classificacaoIMC = " a classificação excelente, Parabéns!!";
     }else if (valorIMC < 30) {
       classificacaoIMC = "sobrepeso";
     }else if (valorIMC < 35) {

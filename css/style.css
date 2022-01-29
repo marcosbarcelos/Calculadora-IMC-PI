@@ -9,6 +9,7 @@
 }
 
 body {
+    overflow: hidden;
     background: linear-gradient(45deg, #2d7be2, #0047e0);
     min-height: 100vh;
     min-width: 100vw;
@@ -48,15 +49,15 @@ body {
     flex-direction: column;
 }
 
-.container-form-input {
+.container_form_input {
     position: relative;
 }
 
-.container-form-input:first-child {
+.container_form_input:first-child {
     margin-bottom: 1.5rem;
 }
 
-.container-form-input input {
+.container_form_input input {
     outline: none;
     font-size: 0.9rem;
     color: rgba(0, 0, 0, 0.7);
@@ -64,20 +65,21 @@ body {
     border: none;
 }
 
-.container-form-input input::placeholder {
+.container_form_input input::placeholder {
     color: rgba(0, 0, 0, 0.5);
 }
 
-.container-form-input select {
+.container_form_input select {
     margin-top: 2rem;
     border: none;
     outline: none;
     font-size: 0.9rem;
     width: 100%;
     color: rgba(0, 0, 0, 0.5);
+    background-color: #fff;
 }
 
-.input-underline {
+.input_underline {
     content: '';
     position: absolute;
     height: 1px;
@@ -115,11 +117,11 @@ form p {
     font-weight: 600;
 }
 
-.container-result {
+.container_result {
     display: none;
     flex-direction: column;
     align-items: center;
-    background-color: white;
+    background-color: #fff;
     max-width: 95vw;
     min-height: 20vh;
     padding: 2rem;
@@ -127,14 +129,14 @@ form p {
     border-radius: 8px;
 }
 
-.container-result h2 {
+.container_result h2 {
     font-weight: 600;
     margin-bottom: 2rem;
     position: relative;
     font-size: 2rem;
 }
 
-.container-result h2::before {
+.container_result h2::before {
     content: '';
     position: absolute;
     height: 4px;
@@ -145,21 +147,21 @@ form p {
     background: linear-gradient(45deg, #2d7be2, #0047e0);
 }
 
-.container-result p {
+.container_result p {
     text-align: center;
 }
 
-.container-result img {
+.container_result img {
     max-width: 50%;
     margin-top: 2rem;
 }
 
-.container-result input {
+.container_result input {
     margin-top: 2rem;
     padding: 0.4rem;
     height: 100%;
     background: linear-gradient(to left, #263af1, #4776E6);
-    color: white;
+    color: #fff;
     cursor: pointer;
     font-size: 0.9rem;
     font-weight: 300;
@@ -167,12 +169,12 @@ form p {
     transition: all 0.3s ease;
 }
 
-.container-result input:hover {
+.container_result input:hover {
     letter-spacing: 0.5px;
     background: linear-gradient(to right, #263af1, #4776E6);
 }
 
-.container-result :nth-child(5) {
+.container_result :nth-child(5) {
     color: rgba(0, 0, 0, 0.5);
     font-size: 0.6rem;
     margin-top: 2rem;
@@ -184,7 +186,7 @@ form p {
 /* media queries */
 @media (max-width: 348.98px) {
     .container,
-    .container-result {
+    .container_result {
         min-width: 5vw;
     }
 }
