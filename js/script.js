@@ -5,9 +5,9 @@ function imc() {
   const peso = document.getElementById("peso").value;
   const resultado = document.getElementById("resultado");
   const select = document.getElementById("sexo");
-  const selectvalue = select.options[select.selectedIndex].value;
+  const selectValue = select.options[select.selectedIndex].value;
 
-  if (altura !== "" && peso !== "" && selectvalue !== "") {
+  if (altura !== "" && peso !== "" && selectValue !== "") {
     document.getElementById("container").style.display = "none";
     document.getElementById("container_resultado").style.display = "flex";
 
@@ -31,7 +31,7 @@ function imc() {
 
     let valorPI = ""; 
 
-    if (selectvalue == "f") {
+    if (selectValue == "f") {
       valorPI = (21 * (altura * altura)).toFixed(1);
     }else {
       valorPI = (22 * (altura * altura)).toFixed(1);
