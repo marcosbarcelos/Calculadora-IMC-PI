@@ -16,18 +16,26 @@ function calcular() {
 
     let classificacaoIMC = '';
 
-    if (valorIMC < 18.5) {
-      classificacaoIMC = 'peso abaixo do normal';
-    } else if (valorIMC < 25) {
-      classificacaoIMC = 'a classificação excelente';
-    } else if (valorIMC < 30) {
-      classificacaoIMC = 'sobrepeso';
-    } else if (valorIMC < 35) {
-      classificacaoIMC = 'Obesidade Grau I';
-    } else if (valorIMC < 40) {
-      classificacaoIMC = 'Obesidade Grau II';
-    } else if (valorIMC >= 40) {
-      classificacaoIMC = 'Obesidade Mórbida';
+    // Compara se a expressão do caso é avaliada como verdadeira, caso sim, ela será correspondida.
+    switch (true) {
+      case (valorIMC < 18.5):
+        classificacaoIMC = 'peso abaixo do normal';
+        break;
+      case (valorIMC < 25):
+        classificacaoIMC = 'a classificação excelente';
+        break;
+      case (valorIMC < 30):
+        classificacaoIMC = 'sobrepeso';
+        break;
+      case (valorIMC < 35):
+        classificacaoIMC = 'Obesidade grau I';
+        break;
+      case (valorIMC < 40):
+        classificacaoIMC = 'Obesidade grau II';
+        break;
+      case (valorIMC > 40):
+        classificacaoIMC = 'Obesidade Mórbida'
+        break;
     }
 
     let valorPI = '';
